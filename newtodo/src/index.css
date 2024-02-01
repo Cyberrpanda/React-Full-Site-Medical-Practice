@@ -11,21 +11,23 @@ list{
   font-weight: 600;
 }
 
-.menubar{
-  width: 100%;
-  background-color: plum;
-  border-bottom: 2px solid black;
-}
-
 .button-appoint{
   padding: 12px 10px;
   border: 2px solid black;
-  background-color: #06A3DA;
+  background-color: #F57E57;
 }
 
 .head{
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #185AA0;
+    width: 100%;
+    padding: 15px;
+}
+
+.head ul li{
+    
 }
 
 .menubar ul li a{
