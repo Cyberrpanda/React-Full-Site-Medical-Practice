@@ -11,10 +11,16 @@ list{
   font-weight: 600;
 }
 
-.button-appoint{
+.button-appoint  {
   padding: 12px 10px;
   border: 2px solid black;
   background-color: #F57E57;
+  cursor: pointer;
+}
+
+.button-appoint:hover{
+  background-color: green;
+  cursor: progress;
 }
 
 .head{
