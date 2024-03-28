@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 :root{
   background-color: white;
@@ -64,3 +65,5 @@ nav ul li {
 nav ul{
   flex-grow: 1;
 }
+
+

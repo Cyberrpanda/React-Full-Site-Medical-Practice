@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./index.css";
 import Slider from "./slider";
 
+
 export default function maincontent() {
   return (
     <>
@@ -28,7 +29,9 @@ export default function maincontent() {
         <div className="nav-right">
           <button className="button-appoint">Appointment</button>
         </div>
-        <Slider></Slider>
+        <Slider>
+         
+        </Slider>
       </div>
     </>
   );
