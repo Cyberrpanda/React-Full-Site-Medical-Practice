@@ -1,35 +1,55 @@
 import "./index.css";
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
-import { useEffect, useRef } from 'react';
-import { register } from 'swiper/element/bundle';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function App() {
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    // Register Swiper web component
-    register();
-
-    // Object with parameters
-    const params = {
-      slidesPerView: 3,
-      breakpoints: {
-        768: {
-          slidesPerView: 4,
-        },
-      },
-    };
-
-    // Assign it to swiper element
-    Object.assign(swiperRef.current, params);
-
-    // initialize swiper
-    swiperRef.current.initialize();
-  }, []);
-
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "./assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+export default function Slider() {
   return (
-    <swiper-container init="false" ref={swiperRef}>
-      ...
-    </swiper-container>
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      <SwiperSlide>
+        <div className="pictureAndText">
+          <img src="../img/work-like-balance-img3-min-1050x555.jpg" alt="slide1" />
+
+          <div className="intro-text ">
+            <h1>Welcome to Medislot</h1>
+            
+            <a className="button-appoint btn btn-success" href="/appointment">
+              Appointment
+            </a>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="pictureAndText">
+            <img src="../img/carousel-2.jpg" alt="slide2" />
+
+            <div className="intro-text ">
+            <h1>Welcome to Medislot</h1>
+            
+            <a className="button-appoint btn btn-success" href="/appointment">
+              Appointment
+            </a>
+          </div>
+        </div>
+       
+      </SwiperSlide>
+    </Swiper>
   );
 }

@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
 import "./index.css";
 import Slider from "./slider";
+import Footer from "./footer";
 
-
-export default function maincontent() {
+export default function App() {
   return (
     <>
       <div className="head">
+       <>
+        <img className="logo" src="../img/Gemini_Generated_Image-removebg-preview.png" alt="logo" />
+       </>
+       
         <nav className="menubar">
           <ul>
             <li>
@@ -25,14 +28,25 @@ export default function maincontent() {
               <a href="">Contact</a>
             </li>
           </ul>
-        </nav>
-        <div className="nav-right">
-          <button className="button-appoint">Appointment</button>
-        </div>
-        <Slider>
-         
-        </Slider>
+        </nav>       
+      </div>
+
+      <div>
+        <Slider></Slider>
+      </div>
+      
+      <div className="secondth">
+       
+       
+     
+
+      </div>
+
+      <div>
+        <Footer></Footer>
       </div>
     </>
   );
 }
+
+
