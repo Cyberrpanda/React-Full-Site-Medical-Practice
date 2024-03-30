@@ -10,7 +10,6 @@
 .pictureAndText img{
   background-size: cover;
   background-repeat: no-repeat;
-  width: ;
   height: 100vh;
 }
 
@@ -71,29 +70,21 @@ nav ul li {
 
 
 .intro-text h1 {
-  color: white;
+  color: whitesmoke;
+}
+
+
+.intro-text p {
+  color: whitesmoke;
 }
 
 .pictureAndText {
   display: relative;
 }
 
-.secondth{
- background-image: url("../img/pexels-artem-podrez-5726850.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- width: ;
- height: 100vh;
-}
-
-.secondth p{
-  text-align: center;
-}
-
 .form{
   padding: 90px;
   position: relative;
-  background-color: ;
 }
 
 .form input{
@@ -142,6 +133,28 @@ nav ul li {
 }
 
 .footer{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+}
+
+.card-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card{
+  width: 300px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.card:hover{
+  background-color: #006D5B;
+}
+
+.service{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
