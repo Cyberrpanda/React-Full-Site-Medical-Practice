@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 :root{
   background-color: white;
+  
 }
 
 .pictureAndText img{
@@ -25,7 +27,7 @@
 }
 
 .logo{
-  width: 150px;
+  width: 120px;
   justify-self: start;
 }
 
@@ -33,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #006d5b;
-  height: 130px;
+  height: 100px;
 }
 
 .button-appoint {
@@ -46,7 +48,7 @@
 
 .menubar ul li a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 nav ul li {
@@ -83,12 +85,12 @@ nav ul li {
 }
 
 .form{
-  padding: 90px;
+  padding: 30px;
   position: relative;
 }
 
 .form input{
-  padding: 5px;
+  width: 300px;
   border: 1px solid;
   border-radius: 5px;
 
@@ -106,9 +108,7 @@ nav ul li {
 
 .appoint{
   display: flex;
-  position: absolute;
-  left: 15%;
-  top: 20%;
+  justify-content: center;
   
 }
 
@@ -133,13 +133,15 @@ nav ul li {
 }
 
 .footer{
-  background-color: white;
-  color: black;
+  display: flex;
+  background-color: #B5AD9E;
+  color:#213739;
+  height: 300px;
 }
 
 .card-holder{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -149,12 +151,49 @@ nav ul li {
   cursor: pointer;
 }
 
+.card-holder .size{
+  width: 500px;
+}
+
 .card:hover{
   background-color: #006D5B;
+  color: white;
+}
+
+.card img{
+  width: 220px;
+  height: 220px;
+}
+
+.card2{
+  display: flex;
 }
 
 .service{
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.footcontent{
+  padding: 35px;
+}
+
+#random{
+  text-align: center;
+}
+
+.special{
+  text-align: center;
+}
+
+.st-icons{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.st-icons img{
+  width: 220px;
+  height: 220px;
 }

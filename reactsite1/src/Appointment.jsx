@@ -7,13 +7,13 @@ export default function Appoint () {
   
       <div className="head">
        <>
-        <img className="logo" src="../img/Gemini_Generated_Image-removebg-preview.png" alt="logo" />
+        <img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png" />
        </>
        
         <nav className="menubar">
           <ul>
-            <li>
-              <a href="./App.jsx">Home</a>
+            <li >
+              <a href="">Home</a>
             </li>
             <li>
               <a href="">About</a>
@@ -31,7 +31,9 @@ export default function Appoint () {
         </nav>       
       </div>
 
-      
+      <br />
+      <br />
+      <br />
        <div className="appointarea">
         <div className="appoint">
 
@@ -43,27 +45,27 @@ export default function Appoint () {
                   <label htmlFor="" >Fullname</label>
                   <br />
                   <input type="text"  className="form-control"  placeholder="Fullname"/>
-                  
+                  <br />
                   <label htmlFor="" >Email Address</label>
                   <br />
                   <input type="email" className="form-control"  placeholder="patient@gmail.com"/>
-
+                  <br />
                   <label htmlFor="" >Confirm Email Address</label>
                   <br />
                   <input type="email" className="form-control"  placeholder="patient@gmail.com"/>
-                
+                  <br />
                   <label htmlFor="" >Password</label>
                   <br />
-                  <input type="password"  className="form-control" placeholder="***" />
-                  
+                  <input type="password"  className="form-control" placeholder="*******" />
+                  <br />
                   <label htmlFor="" >Confirm Password</label>
                   <br />
-                  <input type="password" className="form-control" placeholder="***" />
-                  
+                  <input type="password" className="form-control" placeholder="*******" />
+                  <br />
                   <label htmlFor="" >Date of Birth</label>
                   <br />
                   <input type="date" className="form-control" />
-                  
+                  <br />
                   <label htmlFor="" >Gender</label>
                   <br />
                   <select className="form-control">
@@ -82,8 +84,9 @@ export default function Appoint () {
 
      
    
-    
-     <div>
+      <br />
+      <br />
+      <div>
         <Footer></Footer>
       </div>
 
