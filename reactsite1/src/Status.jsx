@@ -26,8 +26,8 @@ export default function Status (){
       <img src="../img/undraw_doctor_kw5l.png" alt="" />
       <br />
       <br />
-      <h4></h4>
-      <h3></h3>
+      <h4>Consultants</h4>
+      <h3>43</h3>
       </p>
      
       <p>

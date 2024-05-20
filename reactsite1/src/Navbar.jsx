@@ -1,35 +1,36 @@
 import "./index.css"
+import { Link } from "react-router-dom";
 
-export default function Navbar (){
+export default function Navbar () {
   return(
-    <>
+   
     
     <div className="head">
-       <>
-        <img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png" />
-       </>
+       
+        <img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png"  alt="Logo"/>
+       
        
         <nav className="menubar">
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to ="/App">Home</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/Services">Services</Link>
             </li>
             <li>
-              <a href="">Service</a>
+              <Link to ="/Specialityareas">Specialists</Link>
             </li>
             <li>
-              <a href="">Pages</a>
+              <Link to ="/Status">Status</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link to ="/footer">Contact Us</Link>
             </li>
           </ul>
         </nav>       
       </div>
 
-    </>
+   
   )  
 }

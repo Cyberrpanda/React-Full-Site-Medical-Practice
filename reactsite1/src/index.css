@@ -145,6 +145,14 @@ nav ul li {
   justify-content: space-around;
 }
 
+.add{
+  background-image: url('../img/pexels-artem-podrez-5726850.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
 .card{
   width: 300px;
   padding: 30px;
@@ -196,4 +204,9 @@ nav ul li {
 .st-icons img{
   width: 220px;
   height: 220px;
+}
+
+.specials{
+  text-align: center;
+  color: white;
 }

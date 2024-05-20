@@ -3,9 +3,14 @@ import "./index.css";
 export default function Speciality() {
   return (
     <>
-      <h4 className="special">Our World Recognized Doctors</h4>
+      
+     <div className="add">
       <br />
-      <div className="card-holder">
+      
+     <h4 className="specials">Our World Recognized Doctors</h4>
+      <br />
+
+     <div className="card-holder">
         <div className="card size mb-3">
           <div className="row g-0">
             <div className="col-md-4">
@@ -117,7 +122,7 @@ export default function Speciality() {
         </div>
       </div>
 
-      
+     </div>
       
     </>
   );
