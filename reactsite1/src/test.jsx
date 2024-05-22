@@ -1,26 +1,43 @@
-import "./index.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
-import Slider from "./Slider";
-import Footer from "./Footer";
-import Services from "./Services";
-import Speciality from "./Specialityareas";
-import Status from "./Status";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import Appoint from './Appointment.jsx'
+import Services from './Services.jsx'  // Import the Services component
+import Speciality from './Speciality.jsx'  // Import the Speciality component
+import Status from './Status.jsx'  // Import the Status component
+import Footer from './Footer.jsx'  // Import the Footer component
+import './index.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/Slider" element={<Slider />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/specialists" element={<Speciality />} />
-          <Route path="/status" element={<Status />} />
-          <Route path="/contact" element={<Footer />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
-}
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />
+  },
+  {
+    path: '/appointment',
+    element: <Appoint />
+  },
+  {
+    path: '/services',
+    element: <Services />
+  },
+  {
+    path: '/specialists',
+    element: <Speciality />
+  },
+  {
+    path: '/status',
+    element: <Status />
+  },
+  {
+    path: '/contact',
+    element: <Footer />
+  }
+])
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+)
