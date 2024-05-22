@@ -16,7 +16,7 @@ export default function Navbar () {
               <Link to ="/App">Home</Link>
             </li>
             <li>
-              <Link to="/Services">Services</Link>
+              <Link to="/services">Services</Link>
             </li>
             <li>
               <Link to ="/Specialityareas">Specialists</Link>
