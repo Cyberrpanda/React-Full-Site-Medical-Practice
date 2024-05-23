@@ -10,16 +10,27 @@ export default function Home() {
   return (
    
       <div>
-        <Navbar />
-        <Slider />
-        <Services/>
-        <br />
-        <Speciality/>
-        <br />
-        <Status/>
        
+         <Navbar />
        
-        <Footer />
+        <section id="slider">
+         <Slider />
+        </section>
+        <section id="services">
+         <Services/>
+        </section>
+        <br />
+        <section id="speciality">
+         <Speciality/>
+        </section>
+        <br />
+        <section id="status">
+         <Status/>
+        </section>
+        <section id="footer">
+         <Footer />
+        </section>
+        
       </div>
    
   );
