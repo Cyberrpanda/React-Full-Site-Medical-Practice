@@ -16,16 +16,16 @@ export default function Navbar () {
               <Link to ="/home">Home</Link>
             </li>
             <li>
-              <Link to ="/Services">Services</Link>
+              <a href ="#services">Services</a>
             </li>
             <li>
-              <Link to ="/Specialityareas">Specialists</Link>
+              <a href ="#speciality">Specialists</a>
             </li>
             <li>
-              <Link to ="/Status">Status</Link>
+              <a href ="#status">Status</a>
             </li>
             <li>
-              <Link to ="/footer">Contact Us</Link>
+              <a href ="#footer">Contact Us</a>
             </li>
           </ul>
         </nav>       
