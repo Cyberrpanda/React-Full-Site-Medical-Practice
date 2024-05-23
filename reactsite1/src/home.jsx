@@ -1,5 +1,4 @@
 import "./index.css";
-import Home from "./home";
 import Navbar from "./Navbar";
 import Slider from "./Slider";
 import Footer from "./footer";
@@ -7,12 +6,10 @@ import Services from "./Services";
 import Speciality from "./Specialityareas";
 import Status from "./Status";
 
-export default function App() {
+export default function Home() {
   return (
    
       <div>
-        <Home>
-   
         <Navbar />
         <Slider />
         <Services/>
@@ -23,9 +20,6 @@ export default function App() {
        
        
         <Footer />
-
-        </Home>
-        
       </div>
    
   );

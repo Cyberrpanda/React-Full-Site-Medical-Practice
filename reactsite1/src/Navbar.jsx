@@ -13,7 +13,7 @@ export default function Navbar () {
         <nav className="menubar">
           <ul>
             <li>
-              <Link to ="/App">Home</Link>
+              <Link to ="/home">Home</Link>
             </li>
             <li>
               <Link to ="/Services">Services</Link>
