@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   
+ 
 }
 :root{
   background-color: white;
@@ -209,4 +210,37 @@ nav ul li {
 .specials{
   text-align: center;
   color: white;
+}
+
+@media (max-width: 768px) {
+ /*Tablet view*/
+ 
+  
+}
+
+@media (max-width: 480px){
+ /*Phone view*/
+
+  *{
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden; 
+  }
+
+  nav ul li {
+   display: inline-block;
+   padding: 1;
+  }
+  
+  .nav-right{
+   display: flex;
+   flex-direction: column;
+  }
+  
+  .slider img{
+    width: 500px;
+    height: 400px;
+  }
+
+
 }

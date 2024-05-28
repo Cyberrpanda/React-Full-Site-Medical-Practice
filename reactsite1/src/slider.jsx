@@ -23,7 +23,7 @@ export default function Slider() {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
-      <SwiperSlide>
+      <SwiperSlide className="slider">
         <div className="pictureAndText">
           <img src="../img/work-like-balance-img3-min-1050x555.jpg" alt="slide1" />
 
@@ -36,7 +36,7 @@ export default function Slider() {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="slider">
         <div className="pictureAndText">
             <img src="../img/carousel-2.jpg" alt="slide2" />
 
