@@ -38,7 +38,7 @@ export default function Slider() {
       </SwiperSlide>
       <SwiperSlide className="slider">
         <div className="pictureAndText">
-            <img src="../img/carousel-2.jpg" alt="slide2" />
+            <img src="../img/pexels-artem-podrez-5726850.jpg" alt="slide2" />
 
             <div className="intro-text ">
             <h1>Welcome to MediBridge</h1>

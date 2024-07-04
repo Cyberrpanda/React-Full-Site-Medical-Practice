@@ -1,21 +1,29 @@
 import "./index.css"
+import { useRef } from "react";
 import { Link } from "react-router-dom";
+import {FaBars, FaTimes} from "react-icons/fa";
 
 export default function Navbar () {
+
+ const navRef = useRef();
+
+ const showNavbar = () => {
+    navRef.current.classList.toggle("navbar");
+ };
+
   return(
    
-    
-    <div className="head">
+    <header className="head">
        
         <img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png"  alt="Logo"/>
        
        
-        <nav className="menubar">
+        <nav ref={navRef} className="menubar">
           <ul>
             <li>
               <Link to ="/home">Home</Link>
             </li>
-            <li>
+            <li >
               <a href ="#services">Services</a>
             </li>
             <li>
@@ -28,8 +36,16 @@ export default function Navbar () {
               <a href ="#footer">Contact Us</a>
             </li>
           </ul>
-        </nav>       
-      </div>
+          
+          <button className="nav-btn nav-close" onClick={showNavbar}>
+            <FaTimes/>
+          </button>
+
+        </nav>
+         <button className="nav-btn" onClick={showNavbar}>
+          <FaBars/>
+         </button>       
+      </header>
 
    
   )  
