@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Services (){
  
-   
+    
  return(
     <>
         <h4 className="service">Our Services</h4>
