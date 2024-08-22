@@ -30,7 +30,7 @@ export default function Status (){
       <h3>43</h3>
       </p>
      
-      <p>
+      <p className="fourthpicture">
       <img src="../img/undraw_medicine_b1ol.png" alt="doctors" />
       <br />
       <br />

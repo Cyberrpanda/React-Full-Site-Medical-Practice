@@ -1,0 +1,281 @@
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ background-color: white;
+}
+  
+.pictureAndText img {
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+  }
+  
+  .button-appoint {
+    padding: 12px 10px;
+    background-color: #006d5b;
+    cursor: pointer;
+  }
+  
+  .button-appoint:hover {
+    background-color: blue;
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 85px;
+    height: 85px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006d5b;
+    padding: 0 2rem;
+    position: relative;
+  }
+  
+  .button-appoint {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+  }
+  
+  .menubar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+.menubar ul li a:hover {
+    color: #044523;
+  }
+  
+  header .nav-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: white;
+    display: none;  
+  }
+  
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .intro-text {
+    font-size: larger;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .intro-text h1 {
+    color: whitesmoke;
+  }
+  
+  .intro-text p {
+    color: whitesmoke;
+  }
+  
+  .pictureAndText {
+    display: relative;
+  }
+  
+  .form {
+    padding: 30px;
+    position: relative;
+  }
+  
+  .form input {
+    width: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+  .form select {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+  .form label {
+    font-weight: 600;
+  }
+  
+  .appoint {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .appoint img {
+    top: 40%;
+    left: 20%;
+  }
+  
+  .regdis {
+    width: 500px;
+    height: 600px;
+  }
+  
+  .btn {
+    background-color: #006d5b;
+  }
+  
+  .btn:hover {
+    background-color: blue;
+    cursor: pointer;
+  }
+  
+  .footer {
+    display: flex;
+    background-color: #b5ad9e;
+    color: #213739;
+    height: 300px;
+  }
+  
+  .card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .add {
+    background-color: #002b4b;
+    display: block;
+    max-width: 100%;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 30px;
+    cursor: pointer;
+  }
+  
+  .card-holder .size {
+    width: 500px;
+  }
+  
+  .card:hover {
+    background-color: #006d5b;
+    color: white;
+  }
+  
+  .card img {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .card2 {
+    display: flex;
+  }
+  
+  .service {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .footcontent {
+    padding: 35px;
+  }
+  
+  #random {
+    text-align: center;
+  }
+  
+  .special {
+    text-align: center;
+  }
+  
+  .st-icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .st-icons img {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .specials {
+    text-align: center;
+    color: white;
+  }
+  
+  .menubar ul li {
+    list-style: none;
+    margin: 0px 15px;
+  }
+  
+  .menubar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menubar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    header nav {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav ul li {
+      display: inline-block;
+      padding: 1;
+    }
+  
+    .slider img {
+      width: 500px;
+      height: 400px;
+    }
+  
+    .nav-btn {
+      display: block !important;
+    }
+  
+    .menubar ul {
+      flex-direction: column;
+    }
+  
+    .menubar ul li {
+      margin-bottom: 10px;
+    }
+  
+    .menubar {
+      position: absolute;
+      bottom: -189px;
+      left: 0;
+      background: #016d5b;
+      height: fit-content;
+      width: 100%;
+      z-index: 2;
+      margin-bottom: 20px;
+      display: none;
+    }
+  }

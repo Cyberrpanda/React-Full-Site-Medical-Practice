@@ -1,52 +1,58 @@
-import "./index.css"
+import "./index.css";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from "react-icons/fa";
+import { useState } from "react";
 
 export default function Navbar () {
 
  const navRef = useRef();
 
+ const [navIsOpen , setNavIsOpen] = useState(false);
+
+
  const showNavbar = () => {
-    navRef.current.classList.toggle("navbar");
+   setNavIsOpen(!navIsOpen);
  };
+
+ const closeNavbar = () => {
+  setNavIsOpen(false);
+};
 
   return(
    
     <header className="head">
+        <Link to ="/home"><img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png"  alt="Logo"/></Link>
        
-        <img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png"  alt="Logo"/>
-       
-       
-        <nav ref={navRef} className="menubar">
+        <nav ref={navRef} className={`menubar ${navIsOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <Link to ="/home">Home</Link>
+              <Link to ="/home" onClick={closeNavbar}>Home</Link>
             </li>
             <li >
-              <a href ="#services">Services</a>
+              <a href ="#services" onClick={closeNavbar}>Services</a>
             </li>
             <li>
-              <a href ="#speciality">Specialists</a>
+              <a href ="#speciality" onClick={closeNavbar}>Specialists</a>
             </li>
             <li>
-              <a href ="#status">Status</a>
+              <a href ="#status" onClick={closeNavbar}>Status</a>
             </li>
             <li>
-              <a href ="#footer">Contact Us</a>
+              <a href ="#footer" onClick={closeNavbar}>Contact Us</a>
             </li>
           </ul>
-          
-          <button className="nav-btn nav-close" onClick={showNavbar}>
-            <FaTimes/>
-          </button>
-
         </nav>
-         <button className="nav-btn" onClick={showNavbar}>
-          <FaBars/>
-         </button>       
+         
+          
+           <button className="nav-btn" onClick={showNavbar}>
+            {navIsOpen ? <FaTimes /> : <FaBars />}
+           </button>
+         
+         
+             
       </header>
 
    
-  )  
+  );  
 }
