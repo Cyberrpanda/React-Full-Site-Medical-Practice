@@ -31,7 +31,7 @@ export default function Status (){
     <br />
     <div className="st-icons">
       <section ref={(el) => (sectionRefs.current[0] = el)}>
-      <img src="../public/img/undraw_Scientist_ft0o.pngg" alt="scientist" />
+      <img src="../img/undraw_Scientist_ft0o.png" alt="scientist" />
       <br />
       <br />
       <h4>Research Labs</h4>
@@ -39,7 +39,7 @@ export default function Status (){
       </section>
 
       <section ref={(el) => (sectionRefs.current[1] = el)}>
-      <img src="../public/img/undraw_medical_research_qg4d.png" alt="departments" />
+      <img src="../img/undraw_medical_research_qg4d.png" alt="departments" />
       <br />
       <br />
       <h4>Departments</h4>
@@ -47,7 +47,7 @@ export default function Status (){
       </section>
 
       <section ref={(el) => (sectionRefs.current[2] = el)}>
-      <img src="../public/img/undraw_doctor_kw5l.png" alt="" />
+      <img src="../img/undraw_doctor_kw5l.png" alt="" />
       <br />
       <br />
       <h4>Consultants</h4>
@@ -55,7 +55,7 @@ export default function Status (){
       </section>
      
       <section className="fourthpicture" ref={(el) => (sectionRefs.current[3] = el)}>
-      <img src="../public/img/undraw_medicine_b1ol.png" alt="doctors" />
+      <img src="../img/undraw_medicine_b1ol.png" alt="doctors" />
       <br />
       <br />
       <h4>Doctors</h4>

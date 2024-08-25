@@ -6,7 +6,7 @@ export default function Footer() {
      <div className="footer">
        
        <div className="footcontent">
-        <img className="logo" src="../public/img/Gemini_Generated_Image (1).jpg" alt="logo" />
+        <img className="logo" src="../img/Gemini_Generated_Image (1).jpg" alt="logo" />
         <br />
         <>
           <h5>MediBridge</h5>

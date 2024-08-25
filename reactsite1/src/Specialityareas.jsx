@@ -40,7 +40,7 @@ export default function Speciality() {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src="../public/img/team-4.jpg"
+                src="../img/team-4.jpg"
                 className="img-fluid rounded-start"
                 alt=""
               />
@@ -67,7 +67,7 @@ export default function Speciality() {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src="../public/img/team-3.jpg"
+                src="../img/team-3.jpg"
                 className="img-fluid rounded-start"
                 alt=""
               />
@@ -96,7 +96,7 @@ export default function Speciality() {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src="../public/img/team-1.jpg"
+                src="../img/team-1.jpg"
                 className="img-fluid rounded-start"
                 alt=""
               />
@@ -123,7 +123,7 @@ export default function Speciality() {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src="../public/img/team-2.jpg"
+                src="../img/team-2.jpg"
                 className="img-fluid rounded-start"
                 alt=""
               />
