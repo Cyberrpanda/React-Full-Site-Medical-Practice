@@ -14,7 +14,7 @@ export default function Appoint () {
        <div className="appointarea">
         <div className="appoint">
 
-           <img src="../img/30408.jpg" alt="regdis" className="regdis" />
+           <img src="../public/img/30408.jpg" alt="regdis" className="regdis" />
 
             
 

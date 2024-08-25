@@ -22,7 +22,7 @@ export default function Navbar () {
   return(
    
     <header className="head">
-        <Link to ="/home"><img className="logo" src="../img/Gemini_Generated_Image__1_-removebg-preview.png"  alt="Logo"/></Link>
+        <Link to ="/home"><img className="logo" src="../public/img/Gemini_Generated_Image__1_-removebg-preview.png"  alt="Logo"/></Link>
        
         <nav ref={navRef} className={`menubar ${navIsOpen ? "open" : ""}`}>
           <ul>
