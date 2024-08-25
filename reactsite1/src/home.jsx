@@ -1,6 +1,6 @@
 import "./index.css";
 import Navbar from "./Navbar";
-import Slider from "./Slider";
+import Slider from "./Slider-com";
 import Footer from "./footer";
 import Services from "./Services";
 import Speciality from "./Specialityareas";
