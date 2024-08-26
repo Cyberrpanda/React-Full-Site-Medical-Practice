@@ -30,7 +30,7 @@ export default function Slider() {
           <div className="intro-text ">
             <h1>Welcome to MediBridge</h1>
              <p>Providing a safe passage to better health ...</p>
-            <a className="button-appoint btn btn-success" href="/appointment">
+            <a className="button-appoint btn btn-success" href="/Appointment.jsx">
               Appointment
             </a>
           </div>
