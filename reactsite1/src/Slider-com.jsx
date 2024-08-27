@@ -1,7 +1,6 @@
 import "./index.css";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -30,7 +29,7 @@ export default function Slider() {
           <div className="intro-text ">
             <h1>Welcome to MediBridge</h1>
              <p>Providing a safe passage to better health ...</p>
-            <a className="button-appoint btn btn-success" href="/Appointment.jsx">
+            <a className="button-appoint btn btn-success" href="/appointment">
               Appointment
             </a>
           </div>
