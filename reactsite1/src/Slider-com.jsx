@@ -2,6 +2,7 @@ import "./index.css";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+
 export default function Slider() {
   return (
     <Swiper
@@ -29,9 +31,12 @@ export default function Slider() {
           <div className="intro-text ">
             <h1>Welcome to MediBridge</h1>
              <p>Providing a safe passage to better health ...</p>
-            <a className="button-appoint btn btn-success" href="/appointment">
+             <Link to="/appointment">
+             <a className="button-appoint btn btn-success">
               Appointment
             </a>
+             </Link>
+            
           </div>
         </div>
       </SwiperSlide>
@@ -42,9 +47,11 @@ export default function Slider() {
             <div className="intro-text ">
             <h1>Welcome to MediBridge</h1>
             <p>Providing a safe passage to better health ...</p>
-            <a className="button-appoint btn btn-success" href="/appointment">
+            <Link to="/appointment">
+             <a className="button-appoint btn btn-success">
               Appointment
             </a>
+             </Link>
           </div>
         </div>
        
